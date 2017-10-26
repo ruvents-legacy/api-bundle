@@ -56,7 +56,7 @@ class Doc
     public $deprecated = false;
 
     /**
-     * @var null|string
+     * @var string
      */
     public $result;
 
