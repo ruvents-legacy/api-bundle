@@ -91,7 +91,7 @@ ANY: 'dark',
                     </table>
                 {% endif %}
                 <h2 class="h6">Ответ</h2>
-                <pre><code class="language-js">{{ include(doc.result|default('@RuventsApi/result/null.json.twig')) }}</code></pre>
+                <pre><code class="language-js">{{ include(doc.result|default('@RuventsApi/result/null.json.twig'))|escape('html') }}</code></pre>
             </div>
         </div>
     </section>
