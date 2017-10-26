@@ -42,7 +42,7 @@ class ApiStreamedIteratorResponse extends StreamedResponse
                     $row = call_user_func($this->normalizer, $this->data);
                 }
 
-                echo json_encode($row, ApiResponse::DEFAULT_ENCODING_OPTIONS);
+                echo json_encode($row, JSON_UNESCAPED_UNICODE);
                 flush();
             }
 
@@ -50,11 +50,9 @@ class ApiStreamedIteratorResponse extends StreamedResponse
             flush();
         };
 
-        parent::__construct(null, $statusCode, $headers);
-
-        if (!$this->headers->has('Content-Type')) {
-            $this->headers->set('Content-Type', ApiResponse::DEFAULT_CONTENT_TYPE);
-        }
+        parent::__construct(null, $statusCode, array_merge([
+            'Content-Type' => 'application/json; charset=utf-8',
+        ], $headers));
     }
 
     /**
