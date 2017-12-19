@@ -1,6 +1,6 @@
 <?php
 
-namespace Ruvents\ApiBundle\Response;
+namespace Ruwork\ApiBundle\Response;
 
 use Symfony\Component\HttpFoundation\StreamedResponse;
 

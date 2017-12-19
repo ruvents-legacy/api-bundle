@@ -1,12 +1,12 @@
 {
-    "name": "ruvents/api-bundle",
-    "description": "RUVENTS API Bundle",
+    "name": "ruwork/api-bundle",
+    "description": "RUWORK API Bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Valentin Udaltsov",
-            "email": "udaltsov@ruvents.com"
+            "email": "udaltsov@ruwork.com"
         }
     ],
     "require": {
@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ruvents\\ApiBundle\\": ""
+            "Ruwork\\ApiBundle\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"

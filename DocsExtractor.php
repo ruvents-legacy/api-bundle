@@ -1,9 +1,9 @@
 <?php
 
-namespace Ruvents\ApiBundle;
+namespace Ruwork\ApiBundle;
 
 use Doctrine\Common\Annotations\Reader;
-use Ruvents\ApiBundle\Annotations\Doc;
+use Ruwork\ApiBundle\Annotations\Doc;
 use Symfony\Component\Routing\RouterInterface;
 
 class DocsExtractor

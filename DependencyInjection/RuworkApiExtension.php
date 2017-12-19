@@ -1,14 +1,14 @@
 <?php
 
-namespace Ruvents\ApiBundle\DependencyInjection;
+namespace Ruwork\ApiBundle\DependencyInjection;
 
-use Ruvents\ApiBundle\Controller\DocsController;
-use Ruvents\ApiBundle\DocsExtractor;
-use Ruvents\ApiBundle\EventListener\ApiListener;
+use Ruwork\ApiBundle\Controller\DocsController;
+use Ruwork\ApiBundle\DocsExtractor;
+use Ruwork\ApiBundle\EventListener\ApiListener;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 
-class RuventsApiExtension extends Extension
+class RuworkApiExtension extends Extension
 {
     /**
      * {@inheritdoc}

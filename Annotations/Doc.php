@@ -1,6 +1,6 @@
 <?php
 
-namespace Ruvents\ApiBundle\Annotations;
+namespace Ruwork\ApiBundle\Annotations;
 
 /**
  * @Annotation()
@@ -26,7 +26,7 @@ class Doc
     public $endpoint;
 
     /**
-     * @var array<Ruvents\ApiBundle\Annotations\Param>
+     * @var array<Ruwork\ApiBundle\Annotations\Param>
      */
     public $params = [];
 

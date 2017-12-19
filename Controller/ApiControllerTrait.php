@@ -1,8 +1,8 @@
 <?php
 
-namespace Ruvents\ApiBundle\Controller;
+namespace Ruwork\ApiBundle\Controller;
 
-use Ruvents\ApiBundle\Helper;
+use Ruwork\ApiBundle\Helper;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormFactoryInterface;
@@ -74,7 +74,7 @@ trait ApiControllerTrait
      */
     protected function normalize($data, array $context = [])
     {
-        $context[Helper::RUVENTS_API] = true;
+        $context[Helper::RUWORK_API] = true;
 
         return $this->getNormalizer()->normalize($data, JsonEncoder::FORMAT, $context);
     }

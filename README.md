@@ -1,4 +1,4 @@
-# RUVENTS API Bundle
+# RUWORK API Bundle
 
 ## Routing
 
@@ -9,8 +9,8 @@ _api:
     prefix:   /api
     defaults:
         _format: json
-        # _ruvents_api attribute enables api listeners for this route
-        _ruvents_api: true
+        # _ruwork_api attribute enables api listeners for this route
+        _ruwork_api: true
 ```
 
 ## Controller
@@ -20,8 +20,8 @@ _api:
 
 namespace AppBundle\Controller\Api;
 
-use Ruvents\ApiBundle\Annotations as Api;
-use Ruvents\ApiBundle\Controller\AbstractApiController;
+use Ruwork\ApiBundle\Annotations as Api;
+use Ruwork\ApiBundle\Controller\AbstractApiController;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
@@ -50,13 +50,13 @@ class TestController extends AbstractApiController
 ```yaml
 twig:
     paths:
-        "%kernel.project_dir%/vendor/ruvents/api-bundle/Resources/views": RuventsApiOriginal
+        "%kernel.project_dir%/vendor/ruwork/api-bundle/Resources/views": RuworkApiOriginal
 ```
 
 ```twig
-{# app/Resources/RuventsApiBundle/views/docs.html.twig #}
+{# app/Resources/RuworkApiBundle/views/docs.html.twig #}
 
-{% extends '@RuventsApiOriginal/docs.html.twig' %}
+{% extends '@RuworkApiOriginal/docs.html.twig' %}
 
 {% block title 'Website API' %}
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Ruvents\ApiBundle\Controller;
+namespace Ruwork\ApiBundle\Controller;
 
-use Ruvents\ApiBundle\DocsExtractor;
+use Ruwork\ApiBundle\DocsExtractor;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 
@@ -26,7 +26,7 @@ class DocsController
 
     public function __invoke(): Response
     {
-        return new Response($this->twig->render('@RuventsApi/docs.html.twig', [
+        return new Response($this->twig->render('@RuworkApi/docs.html.twig', [
             'docs' => $this->extractor->getDocs(),
         ]));
     }

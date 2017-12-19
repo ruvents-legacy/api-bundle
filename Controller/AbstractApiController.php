@@ -1,6 +1,6 @@
 <?php
 
-namespace Ruvents\ApiBundle\Controller;
+namespace Ruwork\ApiBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\FormFactoryInterface;

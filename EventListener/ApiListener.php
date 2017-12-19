@@ -1,9 +1,9 @@
 <?php
 
-namespace Ruvents\ApiBundle\EventListener;
+namespace Ruwork\ApiBundle\EventListener;
 
-use Ruvents\ApiBundle\Helper;
-use Ruvents\ApiBundle\Response\ApiResponse;
+use Ruwork\ApiBundle\Helper;
+use Ruwork\ApiBundle\Response\ApiResponse;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\Event\GetResponseForControllerResultEvent;

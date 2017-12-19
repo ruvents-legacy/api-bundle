@@ -1,13 +1,13 @@
 <?php
 
-namespace Ruvents\ApiBundle;
+namespace Ruwork\ApiBundle;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Route;
 
 class Helper
 {
-    const RUVENTS_API = '_ruvents_api';
+    const RUWORK_API = '_ruwork_api';
 
     private function __construct()
     {
@@ -15,11 +15,11 @@ class Helper
 
     public static function isApiRoute(Route $route): bool
     {
-        return true === $route->getDefault(self::RUVENTS_API);
+        return true === $route->getDefault(self::RUWORK_API);
     }
 
     public static function isApiRequest(Request $request): bool
     {
-        return $request->attributes->getBoolean(self::RUVENTS_API);
+        return $request->attributes->getBoolean(self::RUWORK_API);
     }
 }

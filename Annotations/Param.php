@@ -1,6 +1,6 @@
 <?php
 
-namespace Ruvents\ApiBundle\Annotations;
+namespace Ruwork\ApiBundle\Annotations;
 
 /**
  * @Annotation()
