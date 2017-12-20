@@ -1,12 +1,12 @@
 {
     "name": "ruwork/api-bundle",
-    "description": "RUWORK API Bundle",
+    "description": "Ruwork API Bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Valentin Udaltsov",
-            "email": "udaltsov@ruwork.com"
+            "email": "udaltsov@ruvents.com"
         }
     ],
     "require": {

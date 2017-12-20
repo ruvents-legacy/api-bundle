@@ -1,4 +1,4 @@
-# RUWORK API Bundle
+# Ruwork API Bundle
 
 ## Routing
 
